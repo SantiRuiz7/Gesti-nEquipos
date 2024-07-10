@@ -11,40 +11,63 @@ export const data = {
       { name: "A", hours: 4, pdfPath: "./util/TABLERO AZUL-Modelo.pdf" }
     ],
     "16,5 KVA": [
-      { name: "A", hours: 4, motor: "Lister Petter", Generador: "CRAMACO G2R 160N SSB/4", pdfPath: "./util/TABLERO AZUL-Modelo.pdf"},
-      { name: "B", hours: 0, motor: "Lister Petter", generador: "CRAMACO G2R 160N SSB/4", pdfPath: "./util/TABLERO AZUL-Modelo.pdf" },
-      { name: "C", hours: 0, motor: "Lister Petter", Generador: "CRAMACO G2R 160N SSB/4", pdfPath: "./util/TABLERO AZUL-Modelo.pdf" }
+      { 
+        name: "A", 
+        hours: 4, 
+        motor: "Lister Petter", 
+        Generador: "CRAMACO G2R 160N SSB/4", 
+        pdfPath: "./util/TABLERO AZUL-Modelo.pdf"
+      },
+      { 
+        name: "B", 
+        hours: 0, 
+        motor: "Lister Petter", 
+        Generador: "CRAMACO G2R 160N SSB/4", 
+        pdfPath: "./util/TABLERO AZUL-Modelo.pdf"
+      },
+      { 
+        name: "C", 
+        hours: 0, 
+        motor: "Lister Petter", 
+        Generador: "CRAMACO G2R 160N SSB/4", 
+        pdfPath: "./util/TABLERO AZUL-Modelo.pdf"
+      }
     ],
     "17.5 KVA": [
-      { name: "A", 
+      { 
+        name: "A", 
         hours: 4, 
         motor: "Mitsubishi", 
         Generador: "CRAMACO G2R 160N SSB/4", 
         pdfPath: "./Tablero Azul REG63-4.pdf",
         pdfPathReg: "./Gener REG63_4.pdf"
       },
-      { name: "B", 
+      { 
+        name: "B", 
         hours: 0, 
         motor: "Mitsubishi", 
         Generador: "CRAMACO G2R 160N SSB/4", 
         pdfPath: "./Tablero Azul REG63-4.pdf",
         pdfPathReg: "./Gener REG63_4.pdf"
       },
-      { name: "C", 
+      { 
+        name: "C", 
         hours: 0, 
         motor: "Mitsubishi", 
         Generador: "CRAMACO G2R 160N SSB/4", 
         pdfPath: "./Tablero Azul REG63-4.pdf",
         pdfPathReg: "./Gener REG63_4.pdf"
       },
-      { name: "F", 
+      { 
+        name: "F", 
         hours: 0, 
         motor: "Mitsubishi", 
         Generador: "CRAMACO G2R 160N SSB/4", 
         pdfPath: "./Tablero Azul REG63-4.pdf",
         pdfPathReg: "./Gener REG63_4.pdf"
       },
-      { name: "E", 
+      { 
+        name: "E", 
         hours: 0, 
         motor: "Mitsubishi", 
         Generador: "CRAMACO G2R 160N SSB/4", 
@@ -75,7 +98,7 @@ export const data = {
         motor:"Deutz",
         filters:"Sin info", 
         Generador: "CRAMACO G2R 160N SSB/4",  
-        pdfPath: "/Tablero azul GAVR-12A.pdf", 
+        pdfPath: "./Tablero azul GAVR-12A.pdf", 
         pdfPathReg: "./GAVR-12A-MANUAL.pdf"
       }
     ],
@@ -86,8 +109,8 @@ export const data = {
         motor: "Mitsubishi", 
         filters:"Sin info",
         Generador: "CRAMACO G2R 160N MB/4", 
-        pdfPath: `/Tablero Azul REG63-4.pdf`, 
-        pdfPathReg: "./AS540-AVR.pdf", 
+        pdfPath: `./Tablero Azul REG63-4.pdf`, 
+        pdfPathReg: "./Gener REG63_4.pdf", 
         sensors:"VDO"
       },
       { 
@@ -96,7 +119,8 @@ export const data = {
         motor: "Mitsubishi", 
         filters:"Sin info",
         Generador: "CRAMACO G2R 160N MB/4", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, 
+        pdfPath: `./Tablero Azul MRS-REG63-4.pdf`, 
+        pdfPathReg: "./Gener REG63_4.pdf",
         sensors:"VDO"
       },
       { 
@@ -105,8 +129,8 @@ export const data = {
         motor: "Mitsubishi", 
         filters:"Sin info",
         Generador: "CRAMACO G2R 160N MB/4", 
-        pdfPath: `/Tablero Azul MRS-REG63-4.pdf`, 
-        pdfPathReg: "./AS540-AVR.pdf",  
+        pdfPath: `./Tablero Azul MRS-REG63-4.pdf`, 
+        pdfPathReg: "./Gener REG63_4.pdf",  
         sensors:"VDO"
       },
       { 
@@ -115,7 +139,7 @@ export const data = {
         motor: "Forward", 
         filters:"Sin info",
         Generador: "CRAMACO G2R 160N MB/4",
-        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPath: `./Tablero Azul AS540AVR.pdf`, 
         pdfPathReg: "./AS540-AVR.pdf", 
         sensors:"VDO"
       },
@@ -125,7 +149,7 @@ export const data = {
         motor: "Baudouin", 
         filters:"Sin info",
         Generador: "STAMFORD S1L2-J1",
-        pdfPath: `/Tablero Azul REG63-4.pdf`, 
+        pdfPath: `./Tablero Azul REG63-4.pdf`, 
         pdfPathReg: "./Gener REG63_4.pdf",  
         sensors:"VDO"
       },
@@ -135,7 +159,7 @@ export const data = {
         motor: "Baudouin",
         filters:"Sin info", 
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `/Tablero Azul REG63-4.pdf`, 
+        pdfPath: `./Tablero Azul REG63-4.pdf`, 
         pdfPathReg: "./Gener REG63_4.pdf",
         sensors:"VDO"
       },
@@ -145,7 +169,7 @@ export const data = {
         motor: "Baudouin", 
         filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPath: `./Tablero Azul AS540AVR.pdf`, 
         pdfPathReg: "./AS540-AVR.pdf",
         sensors:"VDO"
       },
@@ -155,7 +179,7 @@ export const data = {
         motor: "Baudouin", 
         filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPath: `./Tablero Azul AS540AVR.pdf`, 
         pdfPathReg: "./AS540-AVR.pdf",
         sensors:"VDO"
       },
@@ -165,7 +189,7 @@ export const data = {
         motor: "Baudouin", 
         filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPath: `./Tablero Azul AS540AVR.pdf`, 
         pdfPathReg: "./AS540-AVR.pdf", 
         sensors:"VDO"
       },
@@ -175,7 +199,7 @@ export const data = {
         motor: "Baudouin", 
         filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPath: `./Tablero Azul AS540AVR.pdf`, 
         pdfPathReg: "./AS540-AVR.pdf", 
         sensors:"VDO"
       },
@@ -185,7 +209,7 @@ export const data = {
         motor: "Baudouin", 
         filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPath: `./Tablero Azul AS540AVR.pdf`, 
         pdfPathReg: "./AS540-AVR.pdf",
         sensors:"VDO"
       },
@@ -195,7 +219,7 @@ export const data = {
         motor: "Baudouin", 
         filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPath: `./Tablero Azul AS540AVR.pdf`, 
         pdfPathReg: "./Gener REG63_4.pdf",
         sensors:"VDO"
       },
@@ -205,7 +229,7 @@ export const data = {
         motor: "Baudouin", 
         filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPath: `./Tablero Azul AS540AVR.pdf`, 
         pdfPathReg: "./AS540-AVR.pdf", 
         regulador: "AS540-AVR", 
         sensors:"VDO"
@@ -216,7 +240,7 @@ export const data = {
         motor: "Baudouin", 
         filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPath: `./Tablero Azul AS540AVR.pdf`, 
         pdfPathReg: "./AS540-AVR.pdf",
         regulador: "AS540-AVR", 
         sensors:"VDO"
@@ -227,7 +251,7 @@ export const data = {
         motor: "Baudouin", 
         filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPath: `./Tablero Azul AS540AVR.pdf`, 
         pdfPathReg: "./AS540-AVR.pdf",
         regulador: "AS540-AVR", 
         sensors:"VDO"
