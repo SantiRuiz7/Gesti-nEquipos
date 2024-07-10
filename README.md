@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Proyecto React con Tailwind CSS
 
 Este proyecto es una aplicación React que utiliza Tailwind CSS para el diseño y estilo de la interfaz de usuario. Incluye componentes como un carrusel, vistas de merchandising y visitas, y navegación entre diferentes rutas.
@@ -211,3 +212,7 @@ Este README proporciona una guía completa para instalar, configurar y ejecutar 
         </select>
       </div>
       */
+=======
+# Gesti-nEquipos
+Aplicacion para gestionar equipos, maquinaria, respuestos, insumos, etc
+>>>>>>> d7154c331671778ec768480127ff4bdad728737f
