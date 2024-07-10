@@ -1,0 +1,43 @@
+/* Elimina cualquier estilo predeterminado innecesario si estás utilizando Tailwind CSS */
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+select {
+  @apply w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+/* Añade esta clase a tu archivo CSS */
+.click-highlight {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: rgba(255, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  animation: click-animation 0.5s ease-out;
+}
+
+@keyframes click-animation {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
+/* Custom toast styles */
+:root {
+  --toastify-color-success: #4caf50; /* Color verde para el éxito */
+  --toastify-color-error: #f44336; /* Color rojo para el error */
+}
+
+.Toastify__toast--success {
+  background-color: var(--toastify-color-success);
+}
+
+.Toastify__toast--error {
+  background-color: var(--toastify-color-error);
+}

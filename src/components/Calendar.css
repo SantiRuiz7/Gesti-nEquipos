@@ -1,0 +1,29 @@
+.list-outside {
+    list-style-type: none;
+    counter-reset: list-counter;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.list-item-icon {
+    margin-right: 0.5rem;
+}
+
+.list-item-content {
+    display: flex;
+    align-items: center;
+}
+
+.list-item-content a {
+    text-decoration: none;
+    color: #1a202c; /* Color del texto */
+}
+
+.list-item-content a:hover {
+    color: #4a5568; /* Color del texto al pasar el mouse */
+}
