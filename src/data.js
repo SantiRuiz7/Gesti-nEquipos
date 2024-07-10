@@ -32,7 +32,6 @@ export const data = {
       },
       { name: "C", 
         hours: 0, 
-
         motor: "Mitsubishi", 
         Generador: "CRAMACO G2R 160N SSB/4", 
         pdfPath: "./Tablero Azul REG63-4.pdf",
@@ -56,27 +55,26 @@ export const data = {
     "20 KVA": [
       { 
         name: "A", 
+        hours: 1, 
         motor:"Lister",
         filters:"Sin info", 
         Generador: "CRAMACO G2R 160N SSB/4", 
-        hours: 1, 
         pdfPath: "./util/TABLERO AZUL-Modelo.pdf"
       },
       { 
         name: "Sin Identificar", 
+        hours: 1,
         motor:"Hyundai",
         filters:"Sin info", 
         Generador: "CRAMACO G2R 160N SSB/4", 
-        hours: 1, 
         pdfPath: "./util/TABLERO AZUL-Modelo.pdf" 
       },
       { 
         name: "B", 
+        hours: 1,
         motor:"Deutz",
         filters:"Sin info", 
-
-        Generador: "CRAMACO G2R 160N SSB/4", 
-        hours: 1, 
+        Generador: "CRAMACO G2R 160N SSB/4",  
         pdfPath: "/Tablero azul GAVR-12A.pdf", 
         pdfPathReg: "./GAVR-12A-MANUAL.pdf"
       }
@@ -86,96 +84,187 @@ export const data = {
         name: "A", 
         hours: 5, 
         motor: "Mitsubishi", 
+        filters:"Sin info",
         Generador: "CRAMACO G2R 160N MB/4", 
         pdfPath: `/Tablero Azul REG63-4.pdf`, 
         pdfPathReg: "./AS540-AVR.pdf", 
         sensors:"VDO"
       },
-      { name: "B", 
+      { 
+        name: "B", 
         hours: 3, 
         motor: "Mitsubishi", 
+        filters:"Sin info",
         Generador: "CRAMACO G2R 160N MB/4", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, sensors:"VDO"},
-      { name: "C", 
+        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, 
+        sensors:"VDO"
+      },
+      { 
+        name: "C", 
         hours: 4, 
         motor: "Mitsubishi", 
+        filters:"Sin info",
         Generador: "CRAMACO G2R 160N MB/4", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, sensors:"VDO"},
-      { name: "D", 
+        pdfPath: `/Tablero Azul MRS-REG63-4.pdf`, 
+        pdfPathReg: "./AS540-AVR.pdf",  
+        sensors:"VDO"
+      },
+      { 
+        name: "D", 
         hours: 4, 
         motor: "Forward", 
-        Generador: "CRAMACO G2R 160N MB/4", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, sensors:"VDO"},
-      { name: "E", 
+        filters:"Sin info",
+        Generador: "CRAMACO G2R 160N MB/4",
+        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPathReg: "./AS540-AVR.pdf", 
+        sensors:"VDO"
+      },
+      { 
+        name: "E", 
         hours: 2, 
         motor: "Baudouin", 
+        filters:"Sin info",
+        Generador: "STAMFORD S1L2-J1",
+        pdfPath: `/Tablero Azul REG63-4.pdf`, 
+        pdfPathReg: "./Gener REG63_4.pdf",  
+        sensors:"VDO"
+      },
+      { 
+        name: "F", 
+        hours: 2, 
+        motor: "Baudouin",
+        filters:"Sin info", 
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, sensors:"VDO"},
-      { name: "F", 
+        pdfPath: `/Tablero Azul REG63-4.pdf`, 
+        pdfPathReg: "./Gener REG63_4.pdf",
+        sensors:"VDO"
+      },
+      { 
+        name: "G", 
         hours: 2, 
         motor: "Baudouin", 
+        filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, sensors:"VDO"},
-      { name: "G", 
+        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPathReg: "./AS540-AVR.pdf",
+        sensors:"VDO"
+      },
+      { 
+        name: "H", 
         hours: 2, 
         motor: "Baudouin", 
+        filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, sensors:"VDO"},
-      { name: "H", 
+        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPathReg: "./AS540-AVR.pdf",
+        sensors:"VDO"
+      },
+      { 
+        name: "I", 
         hours: 2, 
         motor: "Baudouin", 
+        filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, sensors:"VDO"},
-      { name: "I", 
+        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPathReg: "./AS540-AVR.pdf", 
+        sensors:"VDO"
+      },
+      { 
+        name: "J", 
         hours: 2, 
         motor: "Baudouin", 
+        filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, sensors:"VDO"},
-      { name: "J", 
+        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPathReg: "./AS540-AVR.pdf", 
+        sensors:"VDO"
+      },
+      { 
+        name: "K", 
         hours: 2, 
         motor: "Baudouin", 
+        filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, sensors:"VDO"},
-      { name: "K", 
+        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPathReg: "./AS540-AVR.pdf",
+        sensors:"VDO"
+      },
+      { 
+        name: "L", 
         hours: 2, 
         motor: "Baudouin", 
+        filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, sensors:"VDO"},
-      { name: "L", 
+        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPathReg: "./Gener REG63_4.pdf",
+        sensors:"VDO"
+      },
+      { 
+        name: "M", 
         hours: 2, 
         motor: "Baudouin", 
+        filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, sensors:"VDO"},
-      { name: "M", 
+        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPathReg: "./AS540-AVR.pdf", 
+        regulador: "AS540-AVR", 
+        sensors:"VDO"
+      },
+      { 
+        name: "N", 
         hours: 2, 
         motor: "Baudouin", 
+        filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, regulador: "AS540-AVR", sensors:"VDO"},
-      { name: "N", 
+        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPathReg: "./AS540-AVR.pdf",
+        regulador: "AS540-AVR", 
+        sensors:"VDO"
+      },
+      { 
+        name: "Ñ", 
         hours: 2, 
         motor: "Baudouin", 
+        filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, regulador: "AS540-AVR", sensors:"VDO"},
-      { name: "Ñ", 
+        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPathReg: "./AS540-AVR.pdf",
+        regulador: "AS540-AVR", 
+        sensors:"VDO"
+      },
+      { 
+        name: "O", 
         hours: 2, 
         motor: "Baudouin", 
+        filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, regulador: "AS540-AVR", sensors:"VDO"},
-      { name: "O", 
+        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPathReg: "./AS540-AVR.pdf",
+        regulador: "AS540-AVR", 
+        sensors:"VDO"
+      },
+      { 
+        name: "P", 
         hours: 2, 
         motor: "Baudouin", 
+        filters:"Sin info",
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, regulador: "AS540-AVR", sensors:"VDO"},
-      { name: "P", 
+        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPathReg: "./AS540-AVR.pdf",
+        regulador: "AS540-AVR", 
+        sensors:"VDO"
+      },
+      { 
+        name: "Q", 
         hours: 2, 
-        motor: "Baudouin", 
+        motor: "Baudouin",
+        filters:"Sin info", 
         Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, regulador: "AS540-AVR", sensors:"VDO"},
-      { name: "Q", 
-        hours: 2, 
-        motor: "Baudouin", 
-        Generador: "STAMFORD S1L2-J1", 
-        pdfPath: `${process.env.PUBLIC_URL}/util/Tablero azul.pdf`, regulador: "AS540-AVR", sensors:"VDO"}
+        pdfPath: `/Tablero Azul AS540AVR.pdf`, 
+        pdfPathReg: "./AS540-AVR.pdf", 
+        regulador: "AS540-AVR", 
+        sensors:"VDO"
+      }
     ],
     "40KVA": [
       { 
@@ -183,12 +272,24 @@ export const data = {
         hours: 4, 
         motor: "John Deere",
         filters:"Sin info", 
-        pdfPath: "./util/TABLERO AZUL-Modelo.pdf"}
+        pdfPath: `/Tablero Azul REG63-4.pdf`, 
+        pdfPathReg: "./Gener REG63_4.pdf",
+        sensors:"VDO"
+      }
     ],
     "50 KVA": [
-      { name: "A", hours: 0, pdfPath: "./util/TABLERO AZUL-Modelo.pdf" },
-      { name: "B", hours: 0, pdfPath: "./util/TABLERO AZUL-Modelo.pdf" },
-      { name: "C", hours: 0, pdfPath: "./util/TABLERO AZUL-Modelo.pdf" }
+      { 
+        name: "A", 
+        hours: 0, 
+        pdfPath: "./util/TABLERO AZUL-Modelo.pdf" },
+      { 
+        name: "B", 
+        hours: 0, 
+        pdfPath: "./util/TABLERO AZUL-Modelo.pdf" },
+      { 
+        name: "C", 
+        hours: 0, 
+        pdfPath: "./util/TABLERO AZUL-Modelo.pdf" }
     ],
     "60 KVA": [
       { name: "A", hours: 0, pdfPath: "./util/TABLERO AZUL-Modelo.pdf" }
