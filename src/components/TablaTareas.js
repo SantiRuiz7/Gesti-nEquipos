@@ -3,7 +3,7 @@ import 'animate.css';
 
 const Calendar = ({ selectedPerson }) => {
   const [tasks, setTasks] = useState([]);
-const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState('');
   const [showForms, setShowForms] = useState(false);
 
   const toggleForms = () => {
@@ -50,35 +50,40 @@ const [filter, setFilter] = useState('');
   };
 
   const filteredTasks = tasks.filter(task => {
-    const tienda = task.tienda ? task.tienda.toLowerCase() : '';
+    const equipo = task.equipo ? task.equipo.toLowerCase() : '';
     const tarea = task.tarea ? task.tarea.toLowerCase() : '';
     const nombre = task.nombre ? task.nombre.toLowerCase() : '';
+    const evento = task.evento ? task.evento.toLowerCase() : '';
     const filterLower = filter.toLowerCase();
   
     // Filtrar por nombre de persona seleccionada
     const personFilter = selectedPerson.toLowerCase(); // Convertir a minúsculas
   
     return (
-      (tienda.includes(filterLower) || tarea.includes(filterLower) || nombre.includes(filterLower)) &&
+      (equipo.includes(filterLower) || tarea.includes(filterLower) || nombre.includes(filterLower) || evento.includes(filterLower)) &&
       (selectedPerson === '' || nombre.toLowerCase().includes(personFilter))
     );
   });
+
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="">Esta son tus tareas una vez finalizadas puedes borrarlas</h1>
+      <h1 className="">Historial</h1>
      
       <div className="overflow-x-auto">
         <table className="w-full border-collapse border border-gray-300">
           <thead>
             <tr className="bg-gray-200">
-              <th className="py-2 px-4 text-sm font-medium text-left text-gray-700 border-r border-gray-400">Tienda</th>
-              <th className="py-2 px-4 text-sm font-medium text-left text-gray-700">Tarea</th>
+              <th className="py-2 px-4 text-sm font-medium text-left text-gray-700 border-r border-gray-400">Equipos</th>
+              <th className="py-2 px-4 text-sm font-medium text-left text-gray-700 border-r border-gray-400">Evento</th>
+              <th className="py-2 px-4 text-sm font-medium text-left text-gray-700 border-r border-gray-400">Tarea</th>
+              <th className="py-2 px-4 text-sm font-medium text-left text-gray-700">Técnico</th>
             </tr>
           </thead>
           <tbody>
             {filteredTasks.map(task => (
               <tr key={task.id} className={task.tarea ? "bg-red-100" : ""}>
-                <td className="py-2 px-4 text-sm font-medium text-gray-700 border-r border-gray-400  animate__animated animate__backInUp">{task.tienda}</td>
+                <td className="py-2 px-4 text-sm font-medium text-gray-700 border-r border-gray-400  animate__animated animate__backInUp">{task.equipo}</td>
+                <td className="py-2 px-4 text-sm font-medium text-gray-700 border-r border-gray-400  animate__animated animate__backInUp">{task.evento}</td>
                 <td className="py-2 px-4 text-sm text-center list-inside animate__animated animate__backInUp ">
                   {task.tarea}
                   {task.tarea && (
@@ -89,6 +94,7 @@ const [filter, setFilter] = useState('');
                     </button>
                   )}
                 </td>
+                <td className="py-2 px-4 text-sm font-medium text-gray-700 border-r border-gray-400  animate__animated animate__backInUp">{task.nombre}</td>
               </tr>
             ))}
           </tbody>

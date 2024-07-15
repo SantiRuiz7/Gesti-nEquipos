@@ -26,11 +26,11 @@ const Merchandising = () => {
       case 'santi91':
         selected = 'Santiago Ruiz';
         break;
-      case 'marce15':
-        selected = 'Marcelo Carcar';
+      case 'mati93':
+        selected = 'Matias Bonadio';
         break;
-      case 'jorge38':
-        selected = 'Jorge Virgilio';
+      case 'facu92':
+        selected = 'Facundo Esteban';
         break;
       case 'cris33':
         selected = 'Cristian Villagra';

@@ -6,17 +6,18 @@ import { data } from '../data';
 const StoreDetails = () => {
   const { chain, storeName } = useParams();
   const navigate = useNavigate();
-  const user = 'Santiago Ruiz';
+  const users = ['Santiago Ruiz', 'Facundo Esteban', 'Matias Bonadio']; // Lista de usuarios
+  const [selectedUser, setSelectedUser] = useState(users[0]); // Usuario seleccionado
   const [userEquipmentData, setUserEquipmentData] = useState({});
 
   useEffect(() => {
     // Encontrar equipo que coincida con chain y storeName
-    if (data[user]) {
-      const selectedEquipment = Object.keys(data[user]).find(
+    if (data[selectedUser]) {
+      const selectedEquipment = Object.keys(data[selectedUser]).find(
         key => key === chain
       );
-      if (selectedEquipment && data[user][selectedEquipment]) {
-        const equipmentData = data[user][selectedEquipment].find(
+      if (selectedEquipment && data[selectedUser][selectedEquipment]) {
+        const equipmentData = data[selectedUser][selectedEquipment].find(
           item => item.name === storeName
         );
         setUserEquipmentData(equipmentData ? equipmentData : {});
@@ -24,7 +25,7 @@ const StoreDetails = () => {
         setUserEquipmentData({});
       }
     }
-  }, [chain, storeName]);
+  }, [selectedUser, chain, storeName]);
 
   // Estado para controlar la visibilidad del Drawer y su contenido
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
