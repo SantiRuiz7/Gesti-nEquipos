@@ -105,16 +105,14 @@ const Merchandising = () => {
               </div>
             )}
 
-
-
           </div>
 
           <button
-  onClick={() => setIsModalOpen(true)}
-  className="text-xs bg-green-500 text-black font-semibold py-2 px-4 rounded-md transition transform hover:scale-110 my-8" // Agregando espacio superior e inferior
->
-  Ruteo
-</button>
+              onClick={() => setIsModalOpen(true)}
+              className="text-xs bg-green-500 text-black font-semibold py-2 px-4 rounded-md transition transform hover:scale-110 my-8" // Agregando espacio superior e inferior
+              >
+                Credenciales
+          </button>
           {selectedPerson ? (
             <PersonDetails person={selectedPerson} data={data} />
           ) : (
