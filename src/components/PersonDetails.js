@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import fichadaImage from '../fichada.png';
-import Planogramas from './Planogramas';
 import WeeklyPhotosModal from './WeeklyPhotosModal';
 import './PersonDetail.css';
 
@@ -53,10 +51,6 @@ const PersonDetails = ({ person, data, user }) => {
     };
   }, [timerId]);
 
-  const togglePlanogramas = () => {
-    setShowPlanogramas(!showPlanogramas);
-  };
-
   const toggleChain = (chain) => {
     setExpandedChain(expandedChain === chain ? null : chain);
   };
@@ -91,11 +85,11 @@ const PersonDetails = ({ person, data, user }) => {
         className="bg-green-500 p-8 text-black font-semibold py-2 px-4 rounded-md mb-4 transition transform hover:scale-110"
         title="Listado de fotos que son mandatorias cada semana"
       >
-        Fotos Semanales
+        Fotos 
       </button>
       <h2
         onClick={toggleStores}
-        className="cursor-pointer text-xl text-black font-bold mb-6 flex items-center font-roboto border-4 border-orange-500 hover:border-blue-500 p-2 transition-colors"
+        className="bg-green-500 p-8 text-black font-semibold py-2 px-4 rounded-md mb-4 transition transform hover:scale-110"
         style={{ fontFamily: 'Roboto, sans-serif' }}
       >
         Equipos
@@ -140,31 +134,6 @@ const PersonDetails = ({ person, data, user }) => {
               )}
             </div>
           ))}
-        </>
-      )}
-
-      {showFichadaAlert && (
-        <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-800 bg-opacity-75 z-50">
-          <div className="modal-content bg-white p-4 rounded-lg relative animate__animated animate__fadeIn" style={{ maxWidth: '90vw' }}>
-            <button onClick={closeFichadaAlert} className="absolute top-0 right-0 m-2 text-xl">&times;</button>
-            <div className="relative">
-              <img src={fichadaImage} alt="Fichada" className="w-full h-auto rounded shadow-md" />
-              <button onClick={closeFichadaAlert} className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl">&times;</button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      <button onClick={togglePlanogramas} className="bg-black text-white font-semibold py-2 px-4 rounded-md mb-4 transition transform hover:scale-110">
-        Planogramas
-      </button>
-      
-      {showPlanogramas && (
-        <>
-          <button onClick={togglePlanogramas} className="bg-red-400 text-white font-semibold py-2 px-4 rounded-md mb-4 transition transform hover:scale-110">
-            Cerrar
-          </button>
-          <Planogramas />
         </>
       )}
 

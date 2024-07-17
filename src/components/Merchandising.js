@@ -58,10 +58,10 @@ const Merchandising = () => {
     <div className="flex flex-col items-center bg-gradient-to-r from-teal-200 to-teal-500 text-gray-800 min-h-screen">
       <Toaster position="top-center" richColors />
       {!loggedIn ? (
-        <div className="w-full max-w-xs mt-12">
+        <div className="w-full max-w-xs mt-12 px-4 sm:px-0">
           <form
             onSubmit={handleSubmit}
-            className="bg-rose-200 bg-opacity-25 shadow-md rounded px-14 pt-6 pb-8 animate__animated animate__backInRight"
+            className="bg-rose-200 bg-opacity-25 shadow-md rounded px-8 sm:px-14 pt-6 pb-8 animate__animated animate__backInRight"
           >
             <div className="mb-4 text-center">
               <FontAwesomeIcon icon={faUser} className="text-4xl text-gray-500 mb-2" />
@@ -75,7 +75,7 @@ const Merchandising = () => {
               />
             </div>
             <div className="flex items-center justify-center">
-              <button className="rounded-full bg-gray-800 px-20 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-green-800 active:bg-green-800">
+              <button className="rounded-full bg-gray-800 px-16 sm:px-20 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-green-800 active:bg-green-800">
                 <span className="relative">
                   <p className="text-s font-semibold text-white animate__animated animate__flash animate__delay-2s animate__repeat-2">
                     Ingresar
@@ -86,15 +86,15 @@ const Merchandising = () => {
           </form>
         </div>
       ) : (
-        <div className="mt-12 text-center">
-          <h2 className="text-2xl font-bold mb-4">Gestión Equipos GEA SRL</h2>
-          {selectedPerson && <h1 className="text-xl font-bold mb-4">{selectedPerson}</h1>}
+        <div className="mt-12 text-center px-4 sm:px-0">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Gestión Equipos GEA SRL</h2>
+          {selectedPerson && <h1 className="text-xl sm:text-2xl font-bold mb-4">{selectedPerson}</h1>}
           
           {/* Contenedor para los botones */}
           <div className="flex flex-col items-center space-y-4">
             <button
               onClick={toggleTasks}
-              className="text-xs bg-green-500 text-black font-semibold py-2 px-4 rounded-md transition transform hover:scale-110"
+              className="text-xs sm:text-sm bg-green-500 text-black font-semibold py-2 px-4 rounded-md transition transform hover:scale-110"
             >
               {showTasks ? 'Cerrar' : ' Tareas'}
             </button>
@@ -109,7 +109,7 @@ const Merchandising = () => {
 
           <button
               onClick={() => setIsModalOpen(true)}
-              className="text-xs bg-green-500 text-black font-semibold py-2 px-4 rounded-md transition transform hover:scale-110 my-8" // Agregando espacio superior e inferior
+              className="text-xs sm:text-sm bg-green-500 text-black font-semibold py-2 px-4 rounded-md transition transform hover:scale-110 my-8" // Agregando espacio superior e inferior
               >
                 Credenciales
           </button>
@@ -128,3 +128,4 @@ const Merchandising = () => {
 };
 
 export default Merchandising;
+

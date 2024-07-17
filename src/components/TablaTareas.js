@@ -67,16 +67,15 @@ const Calendar = ({ selectedPerson }) => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="">Historial</h1>
-     
+      <h1 className="bg-gray-500 text-white font-semibold py-1 px-3 rounded-sm mb-2 ">Tareas</h1>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse border border-gray-300">
           <thead>
             <tr className="bg-gray-200">
-              <th className="py-2 px-4 text-sm font-medium text-left text-gray-700 border-r border-gray-400">Equipos</th>
-              <th className="py-2 px-4 text-sm font-medium text-left text-gray-700 border-r border-gray-400">Evento</th>
-              <th className="py-2 px-4 text-sm font-medium text-left text-gray-700 border-r border-gray-400">Tarea</th>
-              <th className="py-2 px-4 text-sm font-medium text-left text-gray-700">Técnico</th>
+              <th className="py-2 px-4 text-sm font-semibold text-left text-gray-700 border-r border-gray-400">Equipos</th>
+              <th className="py-2 px-4 text-sm font-semibold text-left text-gray-700 border-r border-gray-400">Evento</th>
+              <th className="py-2 px-4 text-sm font-semibold text-left text-gray-700 border-r border-gray-400">Tarea</th>
+              <th className="py-2 px-4 text-sm font-semibold text-left text-gray-700">Técnico</th>
             </tr>
           </thead>
           <tbody>
@@ -84,7 +83,7 @@ const Calendar = ({ selectedPerson }) => {
               <tr key={task.id} className={task.tarea ? "bg-red-100" : ""}>
                 <td className="py-2 px-4 text-sm font-medium text-gray-700 border-r border-gray-400  animate__animated animate__backInUp">{task.equipo}</td>
                 <td className="py-2 px-4 text-sm font-medium text-gray-700 border-r border-gray-400  animate__animated animate__backInUp">{task.evento}</td>
-                <td className="py-2 px-4 text-sm text-center list-inside animate__animated animate__backInUp ">
+                <td className="py-2 px-4 text-sm font-medium text-gray-700 border-r border-gray-400  animate__animated animate__backInUp">
                   {task.tarea}
                   {task.tarea && (
                     <button onClick={() => deleteTask(task.id)} className="ml-2">
@@ -94,7 +93,7 @@ const Calendar = ({ selectedPerson }) => {
                     </button>
                   )}
                 </td>
-                <td className="py-2 px-4 text-sm font-medium text-gray-700 border-r border-gray-400  animate__animated animate__backInUp">{task.nombre}</td>
+                <td className="py-2 px-4 text-sm font-medium border-gray-400  animate__animated animate__backInUp">{task.nombre}</td>
               </tr>
             ))}
           </tbody>
